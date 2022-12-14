@@ -1,4 +1,4 @@
-FROM ubuntu:alpine
+FROM alpine:latest
 RUN apt update 
 RUN cat sysreqs | xargs -d '\n' apt install -y
 RUN pip install -r pipreqs
