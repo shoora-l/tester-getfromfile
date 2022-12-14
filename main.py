@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
    hostname = 'dockerdude'
-   response = os.system("ping -c 1" + hostname) 
+   response = os.system("ping -c 1 " + hostname) 
    return f"'{response}\nПодумайте что вы умный человек. "
 
 
