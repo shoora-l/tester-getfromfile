@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM ubuntu:latest
 RUN apt update 
 RUN apt install python3
 RUN apt install python3-pip
