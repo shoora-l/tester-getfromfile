@@ -12,7 +12,7 @@ steps:
   - deploy
   - cloudrunservice
   - --image
-  - gcr.io/wideops-sasha/github.com/shoora-l/helloflask@$COMMIT_SHA
+  - gcr.io/wideops-sasha/github.com/shoora-l/helloflask:$COMMIT_SHA
   - --region
   - us-central1
   - --platform
