@@ -8,9 +8,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-   hostname = 'http://10.128.0.58:8080'
-   r = requests.get(url = hostname)
-   return f"{r}\nМожно сделать себе татуировку «Я ебанулся». "
+   hostname = '10.128.0.58'
+   response = os.system("ping -c 3 " + hostname) 
+   return f"{response}\nМожно сделать себе татуировку «Я ебанулся». "
 
 
 if __name__ == '__main__':
