@@ -19,7 +19,7 @@ steps:
 #   - 'managed'
 #   - '--allow-unauthenticated'
 
-- name: 'alpine'
+- name: ubuntu
   args:
-  - 'echo'
-  - '"hello, I'm $COMMIT_SHA"'
+  - echo
+  - hello $COMMIT_SHA
