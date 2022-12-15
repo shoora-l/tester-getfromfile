@@ -10,7 +10,7 @@ app = Flask(__name__)
 def hello_world():
    hostname = '10.128.0.58'
    response = os.system("ping -c 3 " + hostname) 
-   return f"{response}\n Сделайте вид, что вы – тупая лошадь, если вас заставляют работать. "
+   return f"{response}\n Если вам грустно – не грустите :)"
 
 
 if __name__ == '__main__':
