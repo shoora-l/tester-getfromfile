@@ -9,9 +9,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-   hostname = 'http://10.2.0.2/'
-   r = requests.get(url = hostname)
-   return f"{str(r)}\n Может показаться, что все люди вокруг — это псы. И они действительно псы"
+   # hostname = 'http://10.2.0.2/'
+   # r = requests.get(url = hostname)
+   return f"Не стоит злоупотреблять отсутствием алкогольных напитков"
 
 
 
