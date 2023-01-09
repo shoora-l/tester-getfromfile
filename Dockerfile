@@ -1,7 +1,4 @@
-FROM ubuntu:latest
-RUN apt update 
-RUN apt -y install python3
-RUN apt -y install python3-pip
+FROM python:alpine3.17
 COPY pipreqs  .
 RUN pip install -r pipreqs
 COPY main.py .
