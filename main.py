@@ -1,5 +1,5 @@
 from flask import Flask, render_template , request
-
+import os
 
 app = Flask(__name__)
 
@@ -8,9 +8,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-   # hostname = 'http://10.2.0.2/'
-   # r = requests.get(url = hostname)
-   return f"Чтобы защитить психику, вы должны стать умственно отсталым"
+   with open(os.environ['THINGSOURCE'],'r') as f:
+      data = f.read()
+   return render_template('output.html', thing = data)
 
 
 

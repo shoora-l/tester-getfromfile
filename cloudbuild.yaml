@@ -3,13 +3,13 @@ steps:
   args:
   - 'build'
   - '-t'
-  - 'gcr.io/wideops-sasha/github.com/shoora-l/helloflask:latest'
+  - 'gcr.io/wideops-sasha/github.com/shoora-l/tester-getfromfile:latest'
   - '.'
 
 - name: 'gcr.io/cloud-builders/docker'
   args:
   - push
-  - gcr.io/wideops-sasha/github.com/shoora-l/helloflask:latest
+  - gcr.io/wideops-sasha/github.com/shoora-l/tester-getfromfile:latest
 
 # - name: 'gcr.io/cloud-builders/gcloud'
 #   args:

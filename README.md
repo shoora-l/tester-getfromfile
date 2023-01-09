@@ -1,1 +1,1 @@
-Simple hello world, fixed message
+Displays string saved in file at env $THINGSOURCE
