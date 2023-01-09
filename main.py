@@ -1,5 +1,4 @@
 from flask import Flask, render_template , request
-import requests
 
 
 app = Flask(__name__)
@@ -11,7 +10,7 @@ app = Flask(__name__)
 def hello_world():
    # hostname = 'http://10.2.0.2/'
    # r = requests.get(url = hostname)
-   return f"Не стоит злоупотреблять отсутствием алкогольных напитков"
+   return f"Чтобы защитить психику, вы должны стать умственно отсталым"
 
 
 

@@ -3,13 +3,13 @@ steps:
   args:
   - 'build'
   - '-t'
-  - 'gcr.io/wideops-sasha/github.com/shoora-l/helloflask:$COMMIT_SHA'
+  - 'gcr.io/wideops-sasha/github.com/shoora-l/helloflask:latest'
   - '.'
 
 - name: 'gcr.io/cloud-builders/docker'
   args:
   - push
-  - gcr.io/wideops-sasha/github.com/shoora-l/helloflask:$COMMIT_SHA
+  - gcr.io/wideops-sasha/github.com/shoora-l/helloflask:latest
 
 # - name: 'gcr.io/cloud-builders/gcloud'
 #   args:
